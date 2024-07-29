@@ -30,8 +30,7 @@ Ensure you have the following installed:
 
 ### Running the Project
 
-**Start the development server:**
-
+1. **Start the development server:**
     ```bash
     npm start
     ```
