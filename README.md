@@ -1,7 +1,3 @@
-# Project Name
-
-A brief description of the project.
-
 ## Getting Started
 
 These instructions will guide you on how to set up and run the project on your local machine for development and testing.
@@ -35,6 +31,7 @@ Ensure you have the following installed:
 ### Running the Project
 
 **Start the development server:**
+
     ```bash
     npm start
     ```
