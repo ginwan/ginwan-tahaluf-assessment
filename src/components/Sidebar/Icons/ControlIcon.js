@@ -12,7 +12,7 @@ const ControlIcon = () => {
       viewBox="0 0 17.252 17.255"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           <rect
             id="Rectangle_34519"
             data-name="Rectangle 34519"
@@ -23,7 +23,7 @@ const ControlIcon = () => {
           />
         </clipPath>
       </defs>
-      <g id="Group_85063-2" data-name="Group 85063" clip-path="url(#clip-path)">
+      <g id="Group_85063-2" data-name="Group 85063" clipPath="url(#clip-path)">
         <path
           id="Path_276829"
           data-name="Path 276829"

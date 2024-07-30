@@ -1,15 +1,23 @@
 :root {
   --light: #ffffff;
-  --lightBlue: #e7f0f9;
+  --lightBlue: #f6f8fd;
+  --midBlue: #e7f0f9;
   --blue: #1785c6;
   --dark: #081836;
+  --lightGray: #0c1834;
   --grey: #6d7485;
+  --lightYellow: #f6f8fe;
   --yellow: #f8b319;
+  --red: #fb082c;
+}
+
+.icon-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 body {
   margin: 0;
-  background: var(--lightBlue);
+  background: var(--midBlue);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

@@ -7,7 +7,7 @@
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <clipPath id="clip-path">
+    <clipPath id="clipPath">
       <rect id="BG-2" data-name="BG" width="223" height="196" rx="20" transform="translate(0 12)" fill="#fff"/>
     </clipPath>
   </defs>
@@ -15,7 +15,7 @@
     <g transform="matrix(1, 0, 0, 1, 23.5, 811.5)" filter="url(#BG)">
       <rect id="BG-3" data-name="BG" width="223" height="196" rx="20" transform="translate(22.5 7.5)" fill="#0b1838"/>
     </g>
-    <g id="Mask_Group_51" data-name="Mask Group 51" transform="translate(46 807)" opacity="0.05" clip-path="url(#clip-path)" style="mix-blend-mode: luminosity;isolation: isolate">
+    <g id="Mask_Group_51" data-name="Mask Group 51" transform="translate(46 807)" opacity="0.05" clipPath="url(P)" style="mix-blend-mode: luminosity;isolation: isolate">
       <g id="Group_84926" data-name="Group 84926" transform="translate(-178.417 -26)">
         <g id="Group_84925-2" data-name="Group 84925">
           <path id="Path_276758" data-name="Path 276758" d="M282.184,0,230.194,109.854,183.8,11.814h33.249l17.913,37.4,7.149-16.842L226.3.316,226.237,0h-62l55.972,118.813H240.18L296.152,0Z" transform="translate(134.08 0)" fill="#fff"/>
