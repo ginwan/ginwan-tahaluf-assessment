@@ -147,6 +147,7 @@ nav .form-group .search-icon {
   border-bottom-right-radius: 10px;
   width: 167px;
   transition: all 0.3s ease;
+  z-index: 99;
 }
 
 .profile-link a {
@@ -183,6 +184,7 @@ nav .form-group .search-icon {
   overflow: hidden;
   width: 320px;
   transition: all 0.3s ease;
+  z-index: 99;
 }
 
 .notification-link a {
@@ -276,6 +278,7 @@ ul .see-all-link {
   overflow: hidden;
   width: 80px;
   transition: all 0.3s ease;
+  z-index: 99;
 }
 
 .lang-link li a {

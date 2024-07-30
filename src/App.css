@@ -1,0 +1,13 @@
+.dashboard-container {
+  position: relative;
+  width: calc(100% - 240px);
+  left: 240px;
+  height: auto;
+  background: var(--midBlue);
+  border-top-left-radius: 20px;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  max-width: 100%;
+  z-index: 0;
+}

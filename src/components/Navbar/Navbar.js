@@ -99,20 +99,6 @@ const Navbar = () => {
             )}
           </div>
           <div className="profile" onClick={toggleProfileMenu}>
-            {/* <span className="name">
-              <div className="profile-info">
-                <img src={profile} alt="profile" className="profile-img" />
-                <div className="name-admin">
-                  <span>John Doe</span>
-                  <p className="admin-label">Admin</p>
-                </div>
-              </div>
-              {profileMenu ? (
-                <i className="ph-bold ph-caret-up"></i>
-              ) : (
-                <i className="ph-bold ph-caret-down"></i>
-              )}
-            </span> */}
             <span
               className={`name ${profileMenu ? "open-menu" : "close-menu"}`}
             >
