@@ -5,9 +5,11 @@ import totalDectations from "../../assets/total-dectations.png";
 import activeVehciles from "../../assets/active-vehciles.png";
 import ApexChart from "./Chart";
 
+// Statistics Component
 const Statistics = () => {
   return (
     <div className="statistics-container">
+      {/* Chart component start */}
       <div className="chart-container">
         <span className="title">
           Active Vehicles Vs. In-Active Vehicles
@@ -24,6 +26,9 @@ const Statistics = () => {
           <ApexChart />
         </div>
       </div>
+      {/* Chart component end */}
+
+      {/* insights cards component start */}
       <div className="insights">
         <div className="insight-card">
           <div className="card-items">
@@ -48,6 +53,7 @@ const Statistics = () => {
           </div>
         </div>
       </div>
+      {/* insights cards component end */}
     </div>
   );
 };

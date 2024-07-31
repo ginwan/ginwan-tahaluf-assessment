@@ -1,4 +1,3 @@
-// import logo from "./logo.svg";
 import "./App.css";
 import Map from "./components/Map/Map";
 import MidComponent from "./components/MidComponent/MidComponent";
@@ -13,32 +12,20 @@ function App() {
       <Navbar />
       <Sidebar />
       <section className="dashboard-container">
-        <h4>Welcome! John Doe</h4>
+        <h4>Welcome! Ginwan</h4>
 
+        {/* Vpark ,Statistics and insights components */}
         <div className="dashboard">
           <VPark />
           <Statistics />
         </div>
+
         {/* Image component in the middle of the dashbord page */}
         <MidComponent />
 
-        {/* Map content */}
+        {/* Map component */}
         <Map />
       </section>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }

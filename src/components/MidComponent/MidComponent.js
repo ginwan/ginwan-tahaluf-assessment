@@ -2,6 +2,7 @@ import "./midcomponent.css";
 import BirdEye from "../../assets/birdEye.png";
 import Gear from "../../assets/gear.png";
 
+// This component: is An image that locates in the middle of the page, contents some texts and gear image
 const MidComponent = () => {
   return (
     <div className="img-content">

@@ -23,6 +23,7 @@ const VPark = () => {
 
   return (
     <div className="vpark-container">
+      {/* Title and Icons  */}
       <div className="card-top">
         <p>VPark Fleet</p>
         <div className="vpark-icons">
@@ -34,6 +35,8 @@ const VPark = () => {
           </div>
         </div>
       </div>
+
+      {/* VPark drop down component start  */}
       {Array.from({ length: 7 }, (_, index) => (
         <div className="vpark-info-container" key={index}>
           <div
@@ -97,6 +100,7 @@ const VPark = () => {
           )}
         </div>
       ))}
+      {/* VPark drop down component end  */}
     </div>
   );
 };

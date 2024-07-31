@@ -1,15 +1,13 @@
 .statistics-container {
-  width: 50%;
-  margin-bottom: 30px;
+  height: 100%;
+  width: 100%;
 }
 
 .chart-container {
-  width: 100%;
   background-color: var(--light);
-  margin-bottom: 12px;
   border-radius: 20px;
-  padding: 10px;
   display: flex;
+  margin-bottom: 20px;
 }
 
 .chart-container .title {
@@ -40,19 +38,10 @@
   color: #1785c6;
 }
 
-.chart-container .chart {
-  width: 50%;
-}
-
-.insights {
-  width: 100%;
-}
-
 .insight-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  /* padding: 20px; */
   border-radius: 20px;
 }
 
@@ -60,8 +49,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 15px;
+  padding: 14px;
   background-color: var(--light);
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -69,7 +57,7 @@
 }
 
 .card-items img {
-  max-width: 100px;
+  width: 50px;
   margin-bottom: 10px;
 }
 
@@ -77,5 +65,4 @@
   font-size: 24px;
   font-weight: bold;
   color: var(--dark);
-  margin-bottom: 5px;
 }
