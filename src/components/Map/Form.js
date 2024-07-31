@@ -17,11 +17,11 @@ const Form = () => {
       {/* form component start */}
       <div>
         <form className="form">
-          <div className="form-group">
+          <div className="map-form-group">
             <label>Trip name</label>
             <input type="text" placeholder="Trip 2" className="form-field" />
           </div>
-          <div className="form-group">
+          <div className="map-form-group">
             <label>Sector</label>
             <div className="select-container">
               <select className="form-field">

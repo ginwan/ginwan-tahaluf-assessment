@@ -114,7 +114,7 @@ const Navbar = () => {
                 <div className="profile-info">
                   <img src={profile} alt="profile" />
                   <div>
-                    John Doe <p>Admin</p>
+                    Ginwan <p>Admin</p>
                   </div>
                 </div>
                 {profileMenu ? (

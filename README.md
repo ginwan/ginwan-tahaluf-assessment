@@ -35,3 +35,10 @@ Ensure you have the following installed:
     npm start
     ```
    
+
+### Dependencies
+I used this dependencies:
+
+- **Apexcharts**: [Read more about apexcharts](https://apexcharts.com/)
+- **Leaflet.js**: [Read more about leaflet.js map](https://leafletjs.com/)
+- **Phosphor Icon**: [Read more about phosphor icon](https://phosphoricons.com/)

@@ -77,7 +77,7 @@ const Map = () => {
 
         <MapContainer
           center={[24.4539, 54.3773]}
-          zoom={100}
+          zoom={18}
           zoomControl={false}
           className="map"
         >
