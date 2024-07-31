@@ -19,9 +19,12 @@ const Sidebar = () => {
         </a>
         <ul className="side-menu">
           <li>
-            <a href="/#" className="active">
+            <a href="/" className="active">
               <HomeIcon />
               Home
+              <div className="menu-dot">
+                <i className="ph-fill ph-dot-outline"></i>
+              </div>
             </a>
           </li>
           <li>
