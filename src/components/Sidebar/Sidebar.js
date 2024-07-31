@@ -1,5 +1,5 @@
 import "./sidebar.css";
-import React from "react";
+import React, { useState } from "react";
 import HomeIcon from "./Icons/HomeIcon";
 import MapIcon from "./Icons/MapIcon";
 import TransactionIcon from "./Icons/TransactionIcon";
@@ -10,6 +10,20 @@ import questionMark from "../../assets/question-mark.png";
 
 // Sidebar Component
 const Sidebar = () => {
+  const [active, setActive] = useState(0);
+
+  const handleMenuClick = (index) => {
+    setActive(index); // Set active index to the clicked item's index
+  };
+
+  const menuItems = [
+    { label: "Home", icon: <HomeIcon />, href: "/" },
+    { label: "Operation", icon: <TransactionIcon />, href: "/#" },
+    { label: "Map", icon: <MapIcon />, href: "/#" },
+    { label: "Report", icon: <ReportIcon />, href: "/#" },
+    { label: "Control panel", icon: <ControlIcon />, href: "/#" },
+  ];
+
   return (
     <div>
       <section className="sidebar">
@@ -20,37 +34,23 @@ const Sidebar = () => {
           Logo
         </a>
         <ul className="side-menu">
-          <li>
-            <a href="/" className="active">
-              <HomeIcon />
-              Home
-              <div className="menu-dot">
-                <i className="ph-fill ph-dot-outline"></i>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/#">
-              <TransactionIcon className="icon" /> Operation
-            </a>
-          </li>
-          <li>
-            <a href="/#">
-              <MapIcon className="icon" />
-              Map
-            </a>
-          </li>
-          <li>
-            <a href="/#">
-              <ReportIcon className="icon" /> Report
-            </a>
-          </li>
-          <li>
-            <a href="/#">
-              <ControlIcon className="icon" />
-              Control panel
-            </a>
-          </li>
+          {menuItems.map((item, index) => (
+            <li key={index}>
+              <a
+                href={item.href}
+                className={active === index ? "active" : ""}
+                onClick={() => handleMenuClick(index)}
+              >
+                {item.icon}
+                {item.label}
+                {active === index && (
+                  <div className="menu-dot">
+                    <i className="ph-fill ph-dot-outline"></i>
+                  </div>
+                )}
+              </a>
+            </li>
+          ))}
           <div className="help-container">
             <img
               src={questionMark}

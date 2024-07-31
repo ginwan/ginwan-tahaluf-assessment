@@ -62,23 +62,41 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: var(--midBlue);
   border-radius: 50%;
-  right: -15px;
-  /* box-shadow: 0 0 0 10px var(--midBlue), 0 2px 0 9px #fff; */
+  right: -20px;
+}
+
+.menu-dot .ph-dot-outline {
+  font-size: 50px;
 }
 
 .menu-dot::before {
   content: "";
   position: absolute;
-  bottom: -14px;
-  right: 15px;
-  width: 15px;
-  height: 15px;
-  background-color: var(--light);
-  border-top-right-radius: 5px;
+  bottom: -18px;
+  right: 9px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  border-color: transparent var(--midBlue) transparent transparent;
+  z-index: -1;
+}
+
+.menu-dot::after {
+  content: "";
+  position: absolute;
+  top: -17px;
+  right: 9px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 0;
+  border-color: transparent var(--midBlue) transparent transparent;
+  z-index: -1;
 }
 
 .sidebar .side-menu a .icon {
@@ -87,9 +105,9 @@ li {
 
 .help-container {
   position: relative;
-  width: 200px; /* Ensure the container matches the image size */
-  height: 200px; /* Ensure the container matches the image size */
-  text-align: center; /* Center align text if needed */
+  width: 200px;
+  height: 200px;
+  text-align: center;
   margin-top: 200px;
 }
 
@@ -102,34 +120,27 @@ li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the text */
-  color: white; /* Change to desired text color */
-  font-size: 12px; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  color: var(--light);
+  font-size: 12px;
   font-weight: bold;
-  text-shadow: 1px 1px 2px black; /* Optional shadow for better visibility */
+  text-shadow: 1px 1px 2px var(--dark);
 }
 
 .question-img {
   position: absolute;
-  top: -20px; /* Adjust as needed to place the question mark image */
+  top: -20px;
   left: 50%;
-  transform: translateX(-50%); /* Center the question mark image horizontally */
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Adjust size as needed */
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
 }
 
 .help-text p {
   font-size: 8px;
   font-weight: normal;
-  /* white-space: nowrap; */
   margin: 8px;
 }
-
-/* .question-img {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-} */
 
 .help-text button {
   background-color: var(--yellow);
