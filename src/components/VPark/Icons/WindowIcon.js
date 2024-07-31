@@ -18,7 +18,7 @@ const WindowIcon = () => {
         >
           <feOffset dy="5" input="SourceAlpha" />
           <feGaussianBlur stdDeviation="2.5" result="blur" />
-          <feFlood flood-color="#1785c6" flood-opacity="0.302" />
+          <feFlood floodColor="#1785c6" floodOpacity="0.302" />
           <feComposite operator="in" in2="blur" />
           <feComposite in="SourceGraphic" />
         </filter>
@@ -32,7 +32,7 @@ const WindowIcon = () => {
         >
           <feOffset dy="5" input="SourceAlpha" />
           <feGaussianBlur stdDeviation="2.5" result="blur-2" />
-          <feFlood flood-color="#1785c6" flood-opacity="0.302" />
+          <feFlood floodColor="#1785c6" floodOpacity="0.302" />
           <feComposite operator="in" in2="blur-2" />
           <feComposite in="SourceGraphic" />
         </filter>
@@ -46,7 +46,7 @@ const WindowIcon = () => {
         >
           <feOffset dy="5" input="SourceAlpha" />
           <feGaussianBlur stdDeviation="2.5" result="blur-3" />
-          <feFlood flood-color="#1785c6" flood-opacity="0.302" />
+          <feFlood floodColor="#1785c6" floodOpacity="0.302" />
           <feComposite operator="in" in2="blur-3" />
           <feComposite in="SourceGraphic" />
         </filter>
@@ -60,7 +60,7 @@ const WindowIcon = () => {
         >
           <feOffset dy="5" input="SourceAlpha" />
           <feGaussianBlur stdDeviation="2.5" result="blur-4" />
-          <feFlood flood-color="#1785c6" flood-opacity="0.302" />
+          <feFlood floodColor="#1785c6" floodOpacity="0.302" />
           <feComposite operator="in" in2="blur-4" />
           <feComposite in="SourceGraphic" />
         </filter>
@@ -80,7 +80,7 @@ const WindowIcon = () => {
             transform="translate(7.5 2.5)"
             fill="rgba(23,133,198,0)"
             stroke="#1785c6"
-            stroke-width="2"
+            strokeWidth="2"
           >
             <rect width="10" height="11" rx="1" stroke="none" />
             <rect x="1" y="1" width="8" height="9" fill="none" />
@@ -96,7 +96,7 @@ const WindowIcon = () => {
             transform="translate(7.5 14.5)"
             fill="rgba(23,133,198,0)"
             stroke="#1785c6"
-            stroke-width="2"
+            strokeWidth="2"
           >
             <rect width="10" height="11" rx="1" stroke="none" />
             <rect x="1" y="1" width="8" height="9" fill="none" />
@@ -112,7 +112,7 @@ const WindowIcon = () => {
             transform="translate(19.5 2.5)"
             fill="rgba(23,133,198,0)"
             stroke="#1785c6"
-            stroke-width="2"
+            strokeWidth="2"
           >
             <rect width="10" height="11" rx="1" stroke="none" />
             <rect x="1" y="1" width="8" height="9" fill="none" />
@@ -128,7 +128,7 @@ const WindowIcon = () => {
             transform="translate(19.5 14.5)"
             fill="rgba(23,133,198,0)"
             stroke="#1785c6"
-            stroke-width="2"
+            strokeWidth="2"
           >
             <rect width="10" height="11" rx="1" stroke="none" />
             <rect x="1" y="1" width="8" height="9" fill="none" />

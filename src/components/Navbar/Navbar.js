@@ -40,13 +40,13 @@ const Navbar = () => {
                   className="search-bar"
                 />
                 <span className="search-icon">
-                  <i class="ph-bold ph-magnifying-glass icon-shadow"></i>
+                  <i className="ph-bold ph-magnifying-glass icon-shadow"></i>
                 </span>
               </div>
             </form>
             <div className="nav-link" onClick={toggleLanguageMenu}>
               <span className="icon-container">
-                <i class="ph-fill ph-globe icon-shadow"></i>
+                <i className="ph-fill ph-globe icon-shadow"></i>
               </span>
               {languageMenu && (
                 <ul className="lang-link">
@@ -64,7 +64,7 @@ const Navbar = () => {
             </div>
             <div className="nav-link" onClick={toggleNotificationMenu}>
               <span className="icon-container">
-                <i class="ph-fill ph-bell icon-shadow"></i>
+                <i className="ph-fill ph-bell icon-shadow"></i>
                 <span className="badge"></span>
               </span>
               {notificationMenu && (
@@ -147,7 +147,8 @@ const Navbar = () => {
                   <li>
                     <a href="/#">
                       <span>
-                        <i class="ph-bold ph-sign-out profile-icon"></i>Logout
+                        <i className="ph-bold ph-sign-out profile-icon"></i>
+                        Logout
                       </span>
                       <i className="ph ph-caret-right"></i>
                     </a>

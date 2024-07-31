@@ -4,53 +4,83 @@ import AutoGenerateIcon from "./Icons/AutoGenerateIcon";
 const Form = () => {
   return (
     <div className="form-container">
-      <h4>
-        Tripe Route <i class="ph-light ph-info"></i>
-      </h4>
-      <p>Draw Trip Route by Adding Start point, Way points, and End point</p>
+      {/* title */}
+      <div className="form-title">
+        Tripe Route <i className="ph-light ph-info"></i>
+      </div>
+      <div className="tripe-text">
+        Draw Trip Route by Adding Start point, Way points, and End point
+      </div>
+
       <div className="divider"></div>
+
+      {/* form component start */}
       <div>
         <form className="form">
           <div className="form-group">
             <label>Trip name</label>
-            <input type="text" placeholder="Trip 2" />
+            <input type="text" placeholder="Trip 2" className="form-field" />
           </div>
           <div className="form-group">
             <label>Sector</label>
-            <input type="text" placeholder="Marina" />
+            <div className="select-container">
+              <select className="form-field">
+                <option>Marina</option>
+                <option>Marina</option>
+                <option>Marina</option>
+              </select>
+              <i className="ph-bold ph-caret-down select-arrow"></i>
+            </div>
           </div>
         </form>
       </div>
+      {/* form component end */}
+
       <div className="divider"></div>
+
+      {/* Auto Generate button start */}
       <div className="auto-text">
-        <h4>
-          Auto Generate <i class="ph-light ph-info"></i>
-        </h4>
+        <div className="auto-title">
+          Auto Generate <i className="ph-light ph-info"></i>
+        </div>
         <button type="button" className="auto-generate-icon">
           <AutoGenerateIcon />
         </button>
       </div>
+      {/* Auto Generate button end*/}
+
       <div className="divider"></div>
+
+      {/* points components start */}
       <div className="points">
         <div className="point">
-          <h5>Add Start Point</h5>
-          <button type="button" className="point-button">
+          <div className="gray-text">
+            Add <br></br> Start Point
+          </div>
+          <button type="button" className="point-green-button">
             +
           </button>
         </div>
         <div className="point">
-          <h5>Add Start Point</h5>
-          <button type="button" className="point-button">
+          <div className="dark-text">
+            Add <br></br> Start Point
+          </div>
+          <button type="button" className="point-yellow-button">
             +
           </button>
         </div>
         <div className="point">
-          <h5>Add Start Point</h5>
-          <button type="button" className="point-button">
+          <div className="gray-text">
+            Add <br></br> Start Point
+          </div>
+          <button type="button" className="point-red-button">
             +
           </button>
         </div>
       </div>
+      {/* points components end */}
+      <div className="divider"></div>
+      {/*  button */}
       <div className="container-buttons">
         <button type="submit" className="cancel-button">
           Cancel

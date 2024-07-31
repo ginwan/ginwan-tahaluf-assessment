@@ -15,10 +15,10 @@ const Statistics = () => {
           Active Vehicles Vs. In-Active Vehicles
           <div className="info">
             <div>
-              <i class="ph-fill ph-square active"></i> Active Vehicles
+              <i className="ph-fill ph-square active"></i> Active Vehicles
             </div>
             <div>
-              <i class="ph-fill ph-square in-active"></i> In-Active Vehicles
+              <i className="ph-fill ph-square in-active"></i> In-Active Vehicles
             </div>
           </div>
         </span>

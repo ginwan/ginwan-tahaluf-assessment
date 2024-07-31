@@ -10,7 +10,7 @@
 
 .map {
   width: 100%;
-  height: 600px;
+  height: 500px;
   border: none;
   border-radius: 20px;
 }
@@ -21,11 +21,11 @@
 
 .form-container {
   position: absolute;
-  top: 300px;
-  left: 50px;
+  top: 250px;
+  left: 20px;
   transform: translateY(-50%);
-  height: 500px;
-  width: 400px;
+  height: 450px;
+  width: 380px;
   background: var(--light);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   z-index: 9999;
@@ -33,35 +33,83 @@
   padding: 10px;
 }
 
+.form-container .form-title {
+  font-size: 16px;
+  color: var(--darkGrey);
+  font-weight: bold;
+  padding: 10px 10px 0 10px;
+}
+
+.form-container .tripe-text {
+  font-size: 14px;
+  color: var(--darkGrey);
+  opacity: 70%;
+  padding: 10px;
+}
+
 .form {
+  padding: 10px;
   display: flex;
-  gap: 20px;
-  padding: 20px;
+  justify-content: center;
+  gap: 10px;
   border-radius: 10px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  font-size: 14px;
+  color: var(--darkGrey);
 }
 
 label {
-  margin-bottom: 5px; /* Space between label and input */
-  font-weight: bold; /* Optional: make the label bold */
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-input[type="text"] {
+.form-field {
   padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
+  font-size: 14px;
+  border: none;
+  background-color: var(--lightGrey);
   border-radius: 5px;
+  color: var(--darkGrey);
 }
+
+/* start select customization */
+select {
+  width: 180px;
+  appearance: none; /* Hides the default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--blue);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+/* end select customization */
 
 .auto-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  padding: 10px;
+}
+
+.auto-title {
+  font-size: 16px;
+  color: var(--darkGrey);
 }
 
 .auto-generate-icon {
@@ -72,46 +120,69 @@ input[type="text"] {
   padding: 8px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .points {
   display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
-  grid-gap: 9px;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
 .point {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5px;
+  text-align: center;
+  padding: 10px;
   border-radius: 10px;
   background: var(--lightBlue);
-  h5 {
-    font-size: 17px;
-    font-weight: normal;
-    color: var(--grey);
-  }
+  width: 100%;
 }
 
-.point-button {
+.gray-text {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--grey);
+  opacity: 0.7;
+}
+
+.dark-text {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--grey);
+}
+
+.point-green-button,
+.point-red-button,
+.point-yellow-button {
   width: 100%;
-  padding: 8px;
-  margin: 5px;
+  padding: 10px;
+  margin-top: 10px;
   background-color: transparent;
-  border: 1px solid var(--yellow);
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.point-green-button {
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+
+.point-yellow-button {
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+}
+
+.point-red-button {
+  border: 1px solid var(--red);
+  color: var(--red);
 }
 
 .container-buttons {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
   margin-top: 20px;
   width: 100%;
+  height: 55px;
 }
 
 .cancel-button {
@@ -120,8 +191,9 @@ input[type="text"] {
   border: 1px solid var(--yellow);
   border-radius: 10px;
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .save-button {
@@ -132,4 +204,10 @@ input[type="text"] {
   width: 100%;
   padding: 10px;
   margin: 5px;
+  cursor: pointer;
+}
+
+.ph-line-vertical {
+  color: var(--grey);
+  font-size: 14px;
 }

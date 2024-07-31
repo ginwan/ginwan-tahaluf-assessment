@@ -34,7 +34,7 @@ nav .form-group input {
 }
 
 nav .form-group input::placeholder {
-  color: var(--lightGray);
+  color: var(--lightGrey);
   font-weight: normal;
   font-size: 13px;
 }

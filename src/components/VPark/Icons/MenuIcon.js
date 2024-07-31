@@ -18,7 +18,7 @@ const MenuIcon = () => {
         >
           <feOffset dy="5" input="SourceAlpha" />
           <feGaussianBlur stdDeviation="2.5" result="blur" />
-          <feFlood flood-color="#1785c6" flood-opacity="0.302" />
+          <feFlood floodColor="#1785c6" floodOpacity="0.302" />
           <feComposite operator="in" in2="blur" />
           <feComposite in="SourceGraphic" />
         </filter>
@@ -32,7 +32,7 @@ const MenuIcon = () => {
         >
           <feOffset dy="5" input="SourceAlpha" />
           <feGaussianBlur stdDeviation="2.5" result="blur-2" />
-          <feFlood flood-color="#1785c6" flood-opacity="0.302" />
+          <feFlood floodColor="#1785c6" floodOpacity="0.302" />
           <feComposite operator="in" in2="blur-2" />
           <feComposite in="SourceGraphic" />
         </filter>
@@ -46,7 +46,7 @@ const MenuIcon = () => {
         >
           <feOffset dy="5" input="SourceAlpha" />
           <feGaussianBlur stdDeviation="2.5" result="blur-3" />
-          <feFlood flood-color="#1785c6" flood-opacity="0.302" />
+          <feFlood floodColor="#1785c6" floodOpacity="0.302" />
           <feComposite operator="in" in2="blur-3" />
           <feComposite in="SourceGraphic" />
         </filter>
@@ -68,7 +68,7 @@ const MenuIcon = () => {
               transform="translate(7.5 3.5)"
               fill="none"
               stroke="#1785c6"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </g>
           <g
@@ -82,7 +82,7 @@ const MenuIcon = () => {
               transform="translate(7.65 11.16)"
               fill="none"
               stroke="#1785c6"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </g>
           <g
@@ -96,7 +96,7 @@ const MenuIcon = () => {
               transform="translate(7.5 18.5)"
               fill="none"
               stroke="#1785c6"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </g>
         </g>

@@ -10,7 +10,7 @@
   z-index: 0;
 }
 
-.dashboard-container h4 {
+.dashboard-container .welcome {
   margin: 30px;
 }
 

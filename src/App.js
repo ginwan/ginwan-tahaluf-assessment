@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Sidebar />
       <section className="dashboard-container">
-        <h4>Welcome! Ginwan</h4>
+        <h4 className="welcome">Welcome! Ginwan</h4>
 
         {/* Vpark ,Statistics and insights components */}
         <div className="dashboard">
