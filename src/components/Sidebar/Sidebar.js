@@ -14,7 +14,9 @@ const Sidebar = () => {
     <div>
       <section className="sidebar">
         <a href="/" className="logo">
-          <div className="logo-icon"></div>
+          <div className="logo-icon">
+            <i className="ph-bold ph-chart-bar"></i>
+          </div>
           Logo
         </a>
         <ul className="side-menu">

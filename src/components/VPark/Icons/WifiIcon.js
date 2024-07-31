@@ -2,8 +2,8 @@ const WifiIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="32.683"
-      height="26.918"
+      width="22"
+      height="16"
       viewBox="0 0 32.683 26.918"
     >
       <g

@@ -1,21 +1,23 @@
 .vpark-container {
   width: 50%;
+  height: 550px;
   background-color: var(--light);
-  padding: 0.5em 0.5em 0.5em;
+  padding: 20px;
   border: none;
   border-radius: 20px;
+  overflow: scroll;
 }
 
+/* Top section of the card */
 .card-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* width: 100%; */
+  padding: 0 8px 0 8px;
 }
 
 .card-top p {
   font-size: 16px;
-  padding-left: 20px;
   font-weight: bold;
 }
 
@@ -30,9 +32,10 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   cursor: pointer;
+  padding: 8px 4px 0 4px;
   background-color: var(--lightBlue);
+  border-radius: 10px;
 }
 
 .vpark-info-container {
@@ -44,20 +47,41 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--lightBlue);
-  padding: 0 8px 0 8px;
+  padding: 0 16px 0 16px;
   margin-top: 24px;
+  height: 50px;
+}
+
+.show-info {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.hide-info {
   border-radius: 10px;
 }
 
 .vpark-info p {
   font-size: 14px;
-  padding-left: 100px;
+  padding-left: 65px;
   display: flex;
   align-items: center;
 }
 
 .vpark-info p .ph-dot-outline {
-  font-size: 30px;
+  font-size: 40px;
+}
+
+p .green-dot {
+  color: var(--green);
+}
+
+p .yellow-dot {
+  color: var(--yellow);
+}
+
+p .red-dot {
+  color: var(--red);
 }
 
 .active-dot {
@@ -67,9 +91,8 @@
 .vpark-info .ph-caret-down,
 .vpark-info .ph-caret-up {
   color: var(--blue);
-  background: var(--lightBlue);
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .car-icon {
@@ -81,7 +104,7 @@
 .vechile-data {
   display: flex;
   background-color: var(--lightBlue);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   transition: all 0.3s ease;

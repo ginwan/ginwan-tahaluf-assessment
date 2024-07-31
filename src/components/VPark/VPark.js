@@ -9,7 +9,8 @@ import CPUTempIcon from "./Icons/CPUTempIcon";
 import { useState } from "react";
 
 const VPark = () => {
-  const [menu, setMenu] = useState(Array(7).fill(false));
+  // Set initial menu state: true for the first item (index 0), false for the rest
+  const [menu, setMenu] = useState([true, ...Array(6).fill(false)]);
 
   //   Function to change menu status
   const toggleMenu = (index) => {
@@ -35,9 +36,18 @@ const VPark = () => {
       </div>
       {Array.from({ length: 7 }, (_, index) => (
         <div className="vpark-info-container" key={index}>
-          <div className="vpark-info" onClick={() => toggleMenu(index)}>
+          <div
+            className={`vpark-info ${menu[index] ? "show-info" : "hide-info"}`}
+            onClick={() => toggleMenu(index)}
+          >
             <p>
-              <i className="ph-fill ph-dot-outline"></i>
+              {index === 0 || index === 3 ? (
+                <i className="ph-fill ph-dot-outline yellow-dot"></i>
+              ) : index === 1 || index === 2 ? (
+                <i className="ph-fill ph-dot-outline green-dot"></i>
+              ) : (
+                <i className="ph-fill ph-dot-outline red-dot"></i>
+              )}
               Smart vechile {index + 1}
             </p>
             {menu[index] ? (

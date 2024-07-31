@@ -17,6 +17,12 @@ li {
   z-index: 100;
 }
 
+.sidebar .logo-icon {
+  font-size: 36px;
+  color: var(--blue);
+  margin-right: 8px;
+}
+
 .sidebar .logo {
   display: flex;
   align-items: center;
@@ -50,17 +56,29 @@ li {
   font-weight: bold;
 }
 
+/* Menu active url effect */
 .menu-dot {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: var(--midBlue);
   border-radius: 50%;
-  position: absolute;
   right: -15px;
-  font-size: 50px;
+  /* box-shadow: 0 0 0 10px var(--midBlue), 0 2px 0 9px #fff; */
+}
+
+.menu-dot::before {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--light);
+  border-top-right-radius: 5px;
 }
 
 .sidebar .side-menu a .icon {

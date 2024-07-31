@@ -4,8 +4,8 @@ const MemoryIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="32.01"
-      height="24.237"
+      width="22"
+      height="14"
       viewBox="0 0 32.01 24.237"
     >
       <g
